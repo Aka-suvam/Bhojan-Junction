@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+.whats-on-mind{
+margin: 3.3rem 3.5rem;
+padding-bottom: 2rem;   
+}
+
+.mind-title{
+    font-family: "Bree Serif", serif;
+
+}
+.carsoul-container{
+    max-width: 88.5rem;
+    display: flex;
+    gap:1.4rem;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carsoul-container::-webkit-scrollbar{
+    display: none;
+   
+}
+.carsoul-content{
+   flex-shrink: 0;
+   width: 9.4rem;
+   transition: all 0.15s ease-in;
+}
+.carsoul-content:hover{
+    transform: scale(0.80);
+}
+
+
+.carsoul-content img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.carsoul-btns{
+    display: flex;
+    gap:0.7rem;
+    justify-content: flex-end;
+    font-size: 2.3rem;
+    position: relative;
+    bottom:2rem;
+}
+.left-btn,.right-btn{
+   border-radius: 2.3rem;
+   cursor: pointer;
+   padding: 0.3rem;
+   background-color: #F0F0F3;
+   color: #929396;
+   transition: background 0.3s ease-in;   
+  
+}
+.left-btn:hover,.right-btn:hover{
+    background-color: #F97316;
+    color: white;
+}
