@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import { BsStarFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
 import RestaurantIcon from '@mui/icons-material/Restaurant';
@@ -25,7 +25,8 @@ return(<section className="online-resturent" >
    
    { Allresturent?.map(({ info: { id, cloudinaryImageId, name,avgRating,sla,areaName,aggregatedDiscountInfoV3,cuisines}}) =>
    
-   (   <div className="resturent-card"  key={id}>
+   (  <Link to= {`/resturentsmenu/${id}`} key={id} className='links'>
+       <div className="resturent-card">
          <div className="res-img">
             <img src={ONLINE_RES + cloudinaryImageId} alt='resturent-img'/>
          </div>
@@ -51,7 +52,7 @@ return(<section className="online-resturent" >
          </div>
          
     </div>
-    )
+    </Link>)
 )}
    </div>
 

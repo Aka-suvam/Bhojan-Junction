@@ -2,13 +2,15 @@
 
 
 .whats-on-mind{
-margin: 3.3rem 3.5rem;
-padding-bottom: 2rem;   
+/*margin: 3.3rem 3.5rem;*/
+padding: 3rem 3.5rem;
+background-color: #FF5200;
 }
 
 .mind-title{
     font-family: "Bree Serif", serif;
-
+    color: white;
+    font-size: 1.8rem;
 }
 .carsoul-container{
     max-width: 88.5rem;
@@ -20,6 +22,7 @@ padding-bottom: 2rem;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    
 }
 
 .carsoul-container::-webkit-scrollbar{
@@ -30,7 +33,9 @@ padding-bottom: 2rem;
    flex-shrink: 0;
    width: 9.4rem;
    transition: all 0.15s ease-in;
-}
+  
+
+} 
 .carsoul-content:hover{
     transform: scale(0.80);
 }
@@ -41,6 +46,7 @@ padding-bottom: 2rem;
     height: auto;
     object-fit: cover;
     cursor: pointer;
+    border-radius: 1rem;
 }
 
 .carsoul-btns{

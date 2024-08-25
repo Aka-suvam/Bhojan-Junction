@@ -1,32 +1,55 @@
-import React, { useState } from 'react';
+import  { useState,useEffect } from 'react';
+import { BsStarFill } from "react-icons/bs";
+import { MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { Menu_item } from '../../ulits/Constants';
 
-const MenuAccordion = ({ title, recmenu }) => {
+
+const MenuAccordion = ({title,resitem }) => {
+ 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
 
-  // Safely handle recmenu and destructure only if it is defined
-  const recmenuItems = recmenu || []; // Default to empty array if recmenu is undefined
 
-  return (
+
+
+  
+
+return (
     <div className="menu-accordion">
       <div className="accordion-header" onClick={toggleAccordion}>
-        <h3>{title}</h3>
-        <span>{isOpen ? '-' : '+'}</span>
+        <h3 className='menu-accordion-title'>{title} {resitem?.length===0 ?null: `(${resitem?.length})`}</h3>
+        <span>{isOpen ? <MdKeyboardArrowUp className='accordionup'/> : <MdKeyboardArrowDown className='accordiondown'/>}</span>
       </div>
       {isOpen && (
         <div className='accordion-items'>
-          {/*recmenuItems.map(({ card: { info: { id, name, imageId, price } } }) => (
+          {resitem.map(({card:{info:{name,id,imageId,description,price,defaultPrice,ratings}}})=>( 
             <div className="accordion-content" key={id}>
-              <p>{name}</p>
-              <p>{price}</p>
-              <img 
-                src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/6/22/0fbf18a1-5191-4cda-a09d-521a24c8c6ca_25cf57c6-48cc-47bd-b422-17e86b816422.png'
-                alt='Image'/>
+              <div className='menuitem-flex'>
+                <div className='menu-row-one'>
+                <p className='menu-item-name'>{name}</p>
+                <p className='menu-item-price'>  ₹ {(price ?? defaultPrice) / 100} </p>
+                <div className='accordion-rating'>
+                <BsStarFill className="accordion-star-icon"/>
+                <p className='menu-item-rating'>
+                  
+                {(ratings?.aggregatedRating?.rating ?? '2.0')} ({ratings?.aggregatedRating?.ratingCountV2 ?? 5})
+
+                </p>
+                </div>
+                <p className='menu-item-desc'>{description}</p>
+                
+                </div>
+                <div className='menu-row-two'>
+                  <img src={Menu_item+imageId} alt='dish'/>
+                </div>
+               
+               </div> 
             </div>
-          ))*/}
+          ))} 
         </div>
       )}
     </div>

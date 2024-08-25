@@ -39,7 +39,7 @@ const truncateCuisine = (str) => {
      {Topresturent?.map(({ info: { id, cloudinaryImageId, name,avgRating,sla,areaName,aggregatedDiscountInfoV3,cuisines} })=>
   
     
-   (  <Link to= {`/resturentsmenu/${id}`} key={id}>   <div className='top-resturent-card-container' >
+   (  <Link to= {`/resturentsmenu/${id}`} key={id} className='links'>   <div className='top-resturent-card-container' >
         <div className="top-resturent-card"   >
             <div className="top-res-img">
             <img src={TOP_CARSOUL+cloudinaryImageId}

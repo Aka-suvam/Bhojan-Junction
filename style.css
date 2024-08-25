@@ -24,7 +24,12 @@ input,select,textarea,button {
 }*/
 
 
+body{
+background-color: #FFEDE3;
+}
 
-
+.links{
+  text-decoration: none;
+}
 
 

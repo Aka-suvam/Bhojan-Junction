@@ -1,4 +1,23 @@
 
+@font-face {
+    font-family: 'ProximaNova Condensed Bold';
+    src: url('../../assets/fonts/ProximaNovaCond-Bold.ttf') format('truetype');
+    
+  }
+  @font-face {
+    font-family: 'ProximaNova Condensed Med';
+    src: url('../../assets/fonts/ProximaNovaCond-Medium.ttf') format('truetype');
+    
+  }
+  @font-face {
+    font-family: 'ProximaNova Condensed Thin';
+    src: url('../../assets/fonts/ProximaNovaCond-Thin.ttf') format('truetype');
+    
+  }
+  
+
+  
+
 .res-menu{
    /* margin: 10rem 27rem;*/
     margin: 15rem 0;
@@ -10,7 +29,7 @@
 }
 
 .menu-container{
-    width:40%;
+    width:50%;
     }
 .menu-res-name{
     
@@ -19,10 +38,10 @@
     font-size: 1.5rem;
     font-weight: 1000; 
 }
-.menu--img{
-    width: 30rem;
+.menu_img{
+    width: 10rem;
 }
-.menu--img img{
+.menu_img img{
     max-width: 100%;
     height: auto;
 }
@@ -110,6 +129,9 @@ border-radius: 0.3rem;
 
 }
 
+.accordionup,.accordiondown{
+font-size: 1.6rem;
+}
 /*Ascc */
 .menu-accordion {
     border-radius: 4px;
@@ -128,20 +150,57 @@ border-radius: 0.3rem;
     */box-shadow: -2px 7px 21px -6px #aaa7a79c;
 
   }
-  
-  .accordion-header h3 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
   .accordion-content {
     padding: 10px;
     background-color: #fff;
-    /*border-top: 1px solid #ccc;
-    */border-bottom:5px solid red; 
+    border-bottom:1px solid  #ccc; 
   }
   
-  .accordion-content p {
-    margin: 0;
+  .menu-accordion-title{
+    font-family: 'ProximaNova Condensed Bold';
+    color:#3E4152;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
   }
-  
+
+  .menuitem-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    
+  }
+.menu-row-one{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+  .menu-row-two img{
+    max-width: 6rem;
+    border-radius: 0.5rem;
+  }
+
+  .menu-item-name,.menu-item-price{
+    font-family: 'ProximaNova Condensed Med';
+    font-size: 1rem;
+     opacity: 1;
+    color: rgb(62 65 82);
+    letter-spacing: 0.6px;
+  }
+  .accordion-rating{
+    display: flex;
+    gap:0.4rem;
+    font-size: 0.85rem;
+    color: #1BA672; 
+  }
+  .menu-item-desc{
+    width: 90%;
+    font-family: 'ProximaNova Condensed Thin';
+    color: #282c3f73;
+    letter-spacing: 0.6px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+
+  }

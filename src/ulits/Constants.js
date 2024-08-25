@@ -11,3 +11,5 @@ export const MENU_API=`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MEN
 
 
 export const Delivery_icon =`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_40,h_40/v1648635511/Delivery_fee_new_cjxumu`;
+
+export const  Menu_item=`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/`

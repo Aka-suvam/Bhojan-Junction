@@ -4,12 +4,10 @@ import {MENU_API} from '../ulits/Constants.js';
 
   const useRestaurantMenu=(resId)=>{
 
-    const [menu,setMenu]=useState(null);
+    const [menu,setMenu]=useState([]);
    
+    useEffect(() => { fetchMenu() },[resId]);
 
-      useEffect(() => { fetchMenu() },[]);
-
-      //useEffect(()=>{console.log('Menu',menu)},[menu])
 
 
       const fetchMenu = async () => {
@@ -22,13 +20,13 @@ import {MENU_API} from '../ulits/Constants.js';
 
       else  {
            const json = await response.json();
-           //setMenu(json?.data?.cards);
           setMenu(json.data.cards);
           
         }
 
   }catch (error) {
     console.error("Failed to fetch data:", error); 
+    setMenu([]);
   } 
  };
 
