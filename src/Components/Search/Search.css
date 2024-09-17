@@ -1,0 +1,30 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  background: white;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ffb710;
+  font-size: 1.2rem;
+  color: black;
+  outline: none;
+  padding-left: 45px;
+  border-radius: 20px;
+  transition: width 0.55s ease;
+}
+
+.search-container:hover .search-input {
+  width: 200px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 1.3rem;
+  color: #F97316;
+  pointer-events: none; /* Allows the icon to be hovered without interfering with the input hover */
+}

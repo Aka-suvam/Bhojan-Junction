@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useRestaurantMenu from '../../hooks/useRestaurantMenu.js';
 import RestaurantInfo from "./RestaurantInfo.jsx";
 import MenuAccordion from "./MenuAccordion.jsx";
+import Foodimg  from "../../assets/images/food-imgge.svg"
 import './RestaurantMenu.css'; 
 
 const RestaurantMenu = () => {
@@ -65,8 +66,9 @@ const RestaurantMenu = () => {
 <MenuAccordion title={randomFoodItem2?.title} resitem={randomFoodItem2?.itemCards} />
 </>:null
      }
-
-        
+ </div>
+      <div className='back-img'>
+        <img src={Foodimg} alt='back' />
       </div>
     </section>
   );

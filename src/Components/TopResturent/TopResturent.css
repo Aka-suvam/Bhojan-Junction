@@ -86,8 +86,10 @@ border: 0.1px solid red;
 }
 .top-res-name{
     font-family: "Basis Grotesque Pro Bold";
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 1px;
+    line-height: 1.2;
+    padding-bottom: 0.3rem;
     color: #02060cbf;
 }
 .top-flex{

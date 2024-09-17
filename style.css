@@ -25,7 +25,10 @@ input,select,textarea,button {
 
 
 body{
+  /*
 background-color: #FFEDE3;
+*/background: linear-gradient(to bottom, rgba(255, 21, 21, 0.232), rgb(255,255,255),rgba(249, 11, 11, 0.232));
+
 }
 
 .links{

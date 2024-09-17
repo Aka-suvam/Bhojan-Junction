@@ -102,8 +102,8 @@
 
 .hero-text { 
    position: relative;
-   bottom: 2.5rem;
-    color: white;
+   bottom: 2.8rem;
+   color: rgb(228, 197, 144);
     font-weight: 400;
     font-family: 'DM Sans', sans-serif;
     font-size: 1.24rem;
@@ -158,7 +158,7 @@
     cursor: pointer;       
     transition: all 0.15s ease-in;       
     font-size: 1.5rem;       
-    border: 2px solid #F97316;       
+    border: 2px solid #F97316;   
     transform: translateY(-50%) rotate(45deg);       
     width: 45px;       
     height: 45px;       

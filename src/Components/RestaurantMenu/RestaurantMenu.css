@@ -24,12 +24,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     
       
 }
 
 .menu-container{
     width:50%;
+    position: absolute;
+    top:10rem;
+    z-index: 3;
     }
 .menu-res-name{
     
@@ -145,8 +149,7 @@ font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all ease-in 20ms;
-    /*box-shadow: -2px 7px 5px -6px #aaa7a79c;
+    /*transition: all 20ms ease-in;
     */box-shadow: -2px 7px 21px -6px #aaa7a79c;
 
   }
@@ -204,3 +207,27 @@ font-size: 1.6rem;
     font-weight: 500;
 
   }
+
+  
+.back-img {
+  position: relative;
+  z-index: 0;
+  left: 0rem;
+  top: 50rem;
+  animation: move 3s linear infinite;
+}
+
+.back-img img {
+  height: auto;
+  width: 30rem;
+}
+
+/* Add the keyframes animation */
+@keyframes move {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(30px);
+  }
+}

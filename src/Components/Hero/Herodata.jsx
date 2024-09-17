@@ -1,7 +1,7 @@
 
-import HeroSlider1 from "../../../src/assets/images/hero-slider-1.jpg"; 
-import HeroSlider2 from "../../../src/assets/images/hero-slider-2.jpg";
-import HeroSlider3 from "../../../src/assets/images/hero-slider-3.jpg";
+import HeroSlider1 from "../../assets/images/hero-silder-1.jpg"; 
+import HeroSlider2 from "../../assets/images/hero-slider-2.jpg";
+import HeroSlider3 from "../../assets/images/hero-slider-3.jpg";
 
 export const Herodata=[
     {
@@ -25,6 +25,7 @@ export const Herodata=[
         url:HeroSlider3,
         heading1: "amazing & delicious",
         heading2:"Where every flavor tells a story",
-        heading3:"Indulge in life's greatest pleasure food"
-    }
+        heading3:"Good food is the foundation of genuine happiness"
+    },
+    
 ];
