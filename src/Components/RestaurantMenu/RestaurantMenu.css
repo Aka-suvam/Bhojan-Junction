@@ -1,92 +1,103 @@
 
-@font-face {
-    font-family: 'ProximaNova Condensed Bold';
-    src: url('../../assets/fonts/ProximaNovaCond-Bold.ttf') format('truetype');
-    
-  }
-  @font-face {
-    font-family: 'ProximaNova Condensed Med';
-    src: url('../../assets/fonts/ProximaNovaCond-Medium.ttf') format('truetype');
-    
-  }
-  @font-face {
-    font-family: 'ProximaNova Condensed Thin';
-    src: url('../../assets/fonts/ProximaNovaCond-Thin.ttf') format('truetype');
-    
-  }
-  
-
-  
-
 .res-menu{
    /* margin: 10rem 27rem;*/
-    margin: 15rem 0;
+   padding-top: 12rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #FFD5C5;
 
     
       
 }
+.menu-title-container{
+  width: 7rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: red;
+  border-radius: 2rem;
+  border: 3px solid black;
+  box-shadow: 2px 4px  black;
+}
+.menu{
+ font-size: 1.3rem;
+ color:white;
+ }
+.menu-icon{
+  width: 3rem;
+  height: 3rem;
 
+}
+.menu-icon img{
+  width: 100%;
+  height: 100%;
+}
 .menu-container{
-    width:50%;
-    position: absolute;
-    top:10rem;
-    z-index: 3;
+    width:750px;
     }
+  
+.menu-details {
+  width: 700px;
+  margin: 0 auto;
+  border:1px solid black;
+  box-shadow: -4px -4px black;
+  border-radius:200px 28px 28px 200px;
+  display: flex;
+  gap:1.8rem;
+  align-items: center;
+  padding: 0.6rem;
+  }
 .menu-res-name{
     
-    font-family: "Basis Grotesque Pro Bold";
+    font-family: "Raleway", serif;
+    font-weight: 1000;
     letter-spacing: 1px;
-    font-size: 1.5rem;
-    font-weight: 1000; 
+    font-size: 2rem;
+     
 }
 .menu_img{
-    width: 10rem;
+
+   width: 25rem;
+   height: 15rem;
+  border:1px solid red;
+  border-radius:200px 28px 28px 200px;
+
 }
 .menu_img img{
-    max-width: 100%;
-    height: auto;
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:200px 28px 28px 200px;
+  }
+.col1{
+  display: flex;
+  flex-direction: column;
+  gap:1.4rem;
 }
-
-.menu-flex{
-    margin-top: 4rem ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-
-/*.row-one{
-    border:1px solid red;
-}*/
-.row-two{
-border:1px solid rgb(199, 201, 214);
-padding:0 0.3rem;
-
-border-radius: 0.3rem;
-}
-.menu-cusines,.menu-areaname{
-    font-family: "Basis Grotesque Pro Bold";
-    font-size: 0.95rem;
-    color: #646c7699;
-    line-height: 1.4;
-    padding: 0.2rem  0;
+.menu-areaname{
+  font-family: "Raleway", serif; 
+  font-weight: 700;
+  font-size: 0.95rem;
+    color: #6B6B6B;
+    line-height: 1;
     letter-spacing: 2.5px;
 }
 .menu-cusines{
+  font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.95rem;
     color: orangered;
     letter-spacing: 0.1rem;
+ font-weight: 600;
 
 }
 .star-rating{
     display: flex;
     gap:0.3rem;
-    justify-content: center;
     align-items: center;
-    padding: 0.6rem 0;
-    border-bottom: 0.4px solid rgb(214, 215, 223) ;
-
+    
 }
 .menu-star-icon{
     background-color: #008000;
@@ -103,22 +114,19 @@ border-radius: 0.3rem;
 }
 .menu-total-rating{
    
-    color: rgb(121, 122, 128);
+    color: black;
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 1px;
-    line-height: 2;
+    line-height: 1;
+    margin: 0 0.3rem;
     font-size: 0.8rem;
     font-weight: 1000;
-   padding-top: 0.3rem;
-   padding-bottom: 0.1rem;
+   
 }
 .distance{
     display: flex;
     gap:0.6rem;
     align-items: center;
-    padding: 0.5rem 0;
-    border-bottom: 1px dashed #c2c0c0;
-
 }
 .distance-icon{
     width: 1.5rem;
@@ -136,10 +144,15 @@ border-radius: 0.3rem;
 .accordionup,.accordiondown{
 font-size: 1.6rem;
 }
+.accordion-container{
+  margin: 2.5rem 0;
+ 
+}
 /*Ascc */
 .menu-accordion {
     border-radius: 4px;
     margin-bottom: 10px ;
+   
     }
   
   .accordion-header {
@@ -160,7 +173,9 @@ font-size: 1.6rem;
   }
   
   .menu-accordion-title{
-    font-family: 'ProximaNova Condensed Bold';
+    font-family:Verdana, Geneva, Tahoma;
+    
+    font-weight: 900;
     color:#3E4152;
     font-size: 1.1rem;
     letter-spacing: 0.6px;
@@ -168,27 +183,57 @@ font-size: 1.6rem;
 
   .menuitem-flex{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    
-    
+    justify-content: space-between;  
   }
 .menu-row-one{
     display: flex;
     flex-direction: column;
     gap:1rem;
+    
 }
+/*
+.menu-row-two {
+  width: 40%;
+  
+  
+}*/
   .menu-row-two img{
-    max-width: 6rem;
+    display: block;
+    width: 120px;
+    height: 120px;
+   object-fit: cover;
+   object-position: center;
     border-radius: 0.5rem;
   }
-
+.icons-container{
+  display: flex;
+  align-items: center;
+  gap:1.2rem;
+}
+  .veg-icon{
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .nonveg-icon{
+    border:1px solid #FF4141;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 0.3rem;
+  }
+.best-seller{
+  width: 7rem;
+  height: auto;
+  
+  border-radius: 1rem;
+}
   .menu-item-name,.menu-item-price{
-    font-family: 'ProximaNova Condensed Med';
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
-     opacity: 1;
     color: rgb(62 65 82);
     letter-spacing: 0.6px;
+  }
+  .menu-item-price{
+    font-family: 'Times New Roman', Times, serif;
   }
   .accordion-rating{
     display: flex;
@@ -198,22 +243,22 @@ font-size: 1.6rem;
   }
   .menu-item-desc{
     width: 90%;
-    font-family: 'ProximaNova Condensed Thin';
-    color: #282c3f73;
-    letter-spacing: 0.6px;
-    font-size: 0.8rem;
+    font-family: "Raleway", serif;
+    color: #282c3fc4;
+    font-size: 0.85rem;
     line-height: 1.5;
     letter-spacing: 0.6px;
-    font-weight: 500;
+   font-weight: 600;
 
   }
 
   
 .back-img {
-  position: relative;
+  
+  /*position: relative;
   z-index: 0;
   left: 0rem;
-  top: 50rem;
+  top: 39rem;*/
   animation: move 3s linear infinite;
 }
 
@@ -230,4 +275,68 @@ font-size: 1.6rem;
   50% {
       transform: translateY(30px);
   }
+}
+
+.menu-filter-container{
+  display: flex;
+  gap:2rem;
+  
+}
+/*food-filter-Toogle style */
+.toggle-switch-container{
+  border: 4px solid white;
+  border-radius: 10%;
+  padding: 0 1.5rem;
+
+  padding-top: 1.5rem;
+  padding-bottom: 1.1rem;
+  
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 10px;
+  }
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: rgba(2, 6, 12, 0.15);
+  transition: 0.25s;
+  border-radius: 16px;
+}
+
+.toggle-icon {
+  position: absolute;
+  height: 21px;
+  width: 21px;
+  bottom: -5px;
+  transition: 0.25s;
+  transform: translateX(0);
+}
+
+
+
+.toggle-slider.veg.active {
+  background-color: rgb(27, 166, 114);
+}
+
+.toggle-slider.nonveg.active {
+  background-color: rgb(229, 53, 84);
+}
+.toggle-input:checked + .toggle-slider .toggle-icon {
+  transform: translateX(18px);
+}
+
+.toggle-input:focus + .toggle-slider {
+  box-shadow: 0 0 1px #60b246;
 }

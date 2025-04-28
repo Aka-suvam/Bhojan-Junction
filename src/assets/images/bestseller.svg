@@ -1,0 +1,24 @@
+<svg width="120" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      fill: #fc6452;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+    .underline {
+      stroke: #fc6452;
+      stroke-width: 3;
+      fill: none;
+    }
+  </style>
+
+  <!-- Star Icon (inline path for simplicity) -->
+  <path fill="#fc6452" d="M11 0l3.4 6.9L22 8l-5.5 5.3L17.6 20 11 16.5 4.4 20l1-6.7L0 8l7.6-1.1z" transform="translate(0 10) scale(1.2)"></path>
+
+  <!-- Bestseller Text -->
+  <text x="35" y="30" class="text">Bestseller</text>
+
+  <!-- Underline -->
+  <path d="M35 35 Q65 45, 120 35" class="underline"></path>
+</svg>

@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+
+/*divider -css */
 
 .whats-on-mind{
-/*margin: 3.3rem 3.5rem;*/
 padding: 3rem 3.5rem;
-background-color: #FF5200;
+padding-bottom: 5rem;
+background-color: #fb580d;
+
 }
 
 .mind-title{
     font-family: "Bree Serif", serif;
     color: white;
+    color: #f7dd54;
     font-size: 1.8rem;
 }
 .carsoul-container{
@@ -61,13 +64,40 @@ background-color: #FF5200;
    border-radius: 2.3rem;
    cursor: pointer;
    padding: 0.3rem;
-   /*background-color: #F0F0F3;
-   /*color: #929396;*/
-   background-color: white;
+   background-color: #f7dd54;
+   color:#ff5304;
    transition: background 0.3s ease-in;   
+
   
 }
 .left-btn:hover,.right-btn:hover{
-    background-color: #F97316;
-    color: white;
+    color: black;
+   background-color: white;
 }
+
+
+
+/*bottom-divider */
+.custom-shape-divider-bottom-1739262051 {
+    /* position: absolute;
+     
+     left: 0;*/
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+     background-color: #FED9D3;
+    
+   
+ }
+ 
+ .custom-shape-divider-bottom-1739262051 svg {
+     position: relative;
+     display: block;
+     width: calc(100% + 1.3px);
+     height: 102px;
+ }
+ 
+ .custom-shape-divider-bottom-1739262051 .shape-fill {
+     fill: #fb580d;
+ }
+ 

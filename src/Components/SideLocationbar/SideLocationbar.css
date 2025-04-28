@@ -1,0 +1,69 @@
+
+.side-location-bar{
+    width: 30rem;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: scroll;
+    padding-top:3rem;  
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+    /* transition: -webkit-transform ease-out .3s; 
+    
+    /*  -webkit-transform ease-out .3s; */
+    
+    /* -webkit-transform: translateZ(0); */
+         transform: translateZ(0);  
+         transition: transform ease-out .3s;
+         transform: translate(0%, 0px);
+    
+   border:1px solid red;
+}
+
+.cancel-icon{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+
+
+.getlocation-btn{
+    padding: 1.3rem 1.5rem;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;
+    cursor: pointer;
+   
+    
+}
+.location-text-row-one{
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.crosslocation-icon{
+    font-size: 1.5rem;
+   
+   
+}
+.location-text-row-two{
+    display: block;
+   font-size: 0.8rem;
+   font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51 47 47 / 71%);
+    text-transform: capitalize;
+    font-weight: 500;
+}

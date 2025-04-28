@@ -5,20 +5,23 @@ import {ONLINE_RES} from '../../ulits/Constants.js';
 
 
 
-const ResturentCard = ({resdetail}) => {
-const {cloudinaryImageId, name,avgRating,sla,areaName,aggregatedDiscountInfoV3,cuisines}=resdetail?.info;
-
+const ResturentCard = ({resdetail,Index}) => {
+const {cloudinaryImageId, name,avgRating,sla,areaName,aggregatedDiscountInfoV3,cuisines,isOpen}=resdetail?.info;
+/*
+let isOpen=false;
+console.log(isOpen);*/
   
   const truncateCuisine = (str) => {
     return str?.length >= 33 ? str.slice(0, 33) + "..." : str
   }
 
   const resname=(namee)=>{
-   return namee?.length >=33 ? namee.slice(0,33)+'...':namee
+   return namee?.length >=33 ? namee.slice(0,29)+'...':namee
   }
 
   return (
-    <div className="resturent-card">
+   
+      <div className={`resturent-card  card-${Index % 8} ${isOpen?'':"greycard"}`}   >
          <div className="res-img">
             <img src={ONLINE_RES + cloudinaryImageId} alt='resturent-img'/>
          </div>
@@ -44,6 +47,7 @@ const {cloudinaryImageId, name,avgRating,sla,areaName,aggregatedDiscountInfoV3,c
          </div>
          
     </div>
+  
   )
 }
 

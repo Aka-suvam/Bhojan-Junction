@@ -22,15 +22,15 @@ const TopResturent=({Topresturent})=>{
  }
 
 const truncateCuisine = (str) => {
-  return str.length >= 33 ? str.slice(0, 33) + "..." : str
+  return str.length >= 33 ? str.slice(0, 30) + "..." : str
 }
 
     return(<section className="top-resturent">
        <div className="title-btns-container">
         <p className="top-title">Top restaurant chains in Kolkata</p>
         <div className="top-carsoul-btn">
-          <BsArrowLeftShort className='left-btn'  onClick={Carsoulleft}/>
-          <BsArrowRightShort className="right-btn"  onClick={Carsoulright} />
+          <BsArrowLeftShort className="left-btn" id="top-left-btn"  onClick={Carsoulleft}/>
+          <BsArrowRightShort className="right-btn" id="top-right-btn"  onClick={Carsoulright} />
          </div>
 
     </div>
@@ -39,7 +39,7 @@ const truncateCuisine = (str) => {
      {Topresturent?.map(({ info: { id, cloudinaryImageId, name,avgRating,sla,areaName,aggregatedDiscountInfoV3,cuisines} })=>
   
     
-   (  <Link to= {`/resturentsmenu/${id}`} key={id} className='links'>   <div className='top-resturent-card-container' >
+   (  <Link to= {`/resturentsmenu/${id}`} key={id} className='links' onClick={()=>{ window.scrollTo(0, 0)}}>   <div className='top-resturent-card-container' >
         <div className="top-resturent-card"   >
             <div className="top-res-img">
             <img src={TOP_CARSOUL+cloudinaryImageId}
@@ -47,7 +47,7 @@ const truncateCuisine = (str) => {
           </div>
 
          <div className="top-res-detail">
-         
+         <p className={`top-discount ${(aggregatedDiscountInfoV3?.header || aggregatedDiscountInfoV3?.subHeader)? 'with-background':" "} `}>   {aggregatedDiscountInfoV3?.header} {aggregatedDiscountInfoV3?.subHeader}  </p>
             <p className="top-res-name">{name}</p>
            <div className="top-flex">
              <BsStarFill className="top-star-icon" />
@@ -65,7 +65,7 @@ const truncateCuisine = (str) => {
          </div>
        </div> 
 
-      <p className="top-discount">   {aggregatedDiscountInfoV3?.header} {aggregatedDiscountInfoV3?.subHeader}  </p>
+      
 </div>
 </Link>  
     )

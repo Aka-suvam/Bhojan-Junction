@@ -22,7 +22,7 @@ const useRestaurant=()=>{
       else {
 
       const json = await response.json();
-      //console.log(json);
+    //  console.log(json);
 
       const mindslider = json?.data?.cards?.find(x => x?.card?.card?.id === "whats_on_your_mind")?.card?.card ?.imageGridCards?.info;
       const topslider=json?.data?.cards?.find(x => x?.card?.card?.id === "top_brands_for_you")?.card?.card?.gridElements?.infoWithStyle?.restaurants;
@@ -39,6 +39,7 @@ const useRestaurant=()=>{
    };
 
     return [mindCarsoul,topCarsoul,allresturentlist];
+   
 };
 
 

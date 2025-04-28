@@ -1,0 +1,144 @@
+
+footer{
+    margin-top: auto;
+    position: relative;
+}
+   
+.footer-heading{
+    font-family: 'Forum',cursive;
+    
+    font-size: 8vw;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color :#FA6801;
+    
+}
+.row1,.row2{
+    transition: all 0.5s;
+    background-color: #1C0B01;
+    color:#FE5119 ;
+   /* background-color: #1d1d1b;*/
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    align-items: center;
+}
+
+.social-links,.company{
+    display: flex;
+    flex-direction: column;
+    gap:0.7rem;
+    font-family:'DM Sans', sans-serif ; 
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(133, 123, 123, 0.853);
+    
+    
+
+}
+
+
+.social-heading,.company-heading{
+    font-family: "Smooch Sans", serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+   
+    color: #FE5119;
+}
+.row2{
+    font-family: "Raleway", serif;
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 0.97rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.scroll-top{
+    background-color: black;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    
+   
+    
+}
+
+.up-img{
+
+font-size: 1.7rem;
+color: red;
+
+}
+.wave-divider{
+    width: 100%;
+    height: 12rem;
+}
+.wave-divider img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.custom-shape-divider-bottom-1737418023 {
+    position:relative;
+  
+    top:0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: #FFD5C5;
+   
+}
+
+.custom-shape-divider-bottom-1737418023 svg {
+    
+    position: relative;
+    display: block;
+    width: calc(100% + 4.3px);
+     height: 81px;
+    
+   
+}
+
+.custom-shape-divider-bottom-1737418023 .shape-fill {
+    fill: #1C0B01;
+    /*fill: #1d1d1b;*/
+    
+}
+/*
+/** For tablet devices **
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1737418023 svg {
+        width: calc(100% + 2.3px);
+        height: 93px;
+    }
+}
+
+/** For mobile devices **
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1737418023 svg {
+       width: calc(100% + 1.3px);
+        height: 39px;
+    }
+}*/
+
+@media (max-width:807px) {
+    .custom-shape-divider-bottom-1737418023  svg {
+       height: 84px;
+    }
+
+    
+}

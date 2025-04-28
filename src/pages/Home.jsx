@@ -8,15 +8,17 @@ import useRestaurant from "../hooks/useRestaurant.js";
 const Home=()=> {
 
   const [mindCarsoul,topCarsoul,allresturentlist] = useRestaurant();
-  //console.log('homemind',mindCarsoul);
-  //console.log('homemind',typeof fooditems)
+  /*console.log('homemind',mindCarsoul);
+  console.log('topCarsoul',topCarsoul)
+  console.log('allresturentlist',allresturentlist)*/
+
 
   return (
     <>
      <Hero/>
      <WhatsOnMind  fooditems={mindCarsoul}/>
      <TopResturent    Topresturent={topCarsoul}/>
-     <OnlineResturent  Allresturent={allresturentlist}/>    
+     <OnlineResturent  Allresturent={allresturentlist?allresturentlist:topCarsoul}/>    
 
     </>
   )

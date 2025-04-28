@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css?family=Forum');
-@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap');
 
 .text-center {     
     text-align: center; 
@@ -158,7 +156,7 @@
     cursor: pointer;       
     transition: all 0.15s ease-in;       
     font-size: 1.5rem;       
-    border: 2px solid #F97316;   
+    border: 2px solid hsl(28.04deg 38.66% 53.33%);   
     transform: translateY(-50%) rotate(45deg);       
     width: 45px;       
     height: 45px;       
@@ -181,7 +179,7 @@
     cursor: pointer;       
     transition: all 0.15s ease-in;       
     font-size: 1.5rem;       
-    border: 2px solid #F97316;       
+    border: 2px solid hsl(28.04deg 38.66% 53.33%);       
     transform: translateY(-50%) rotate(45deg);       
     width: 45px;       
     height: 45px;       
